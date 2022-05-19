@@ -1,0 +1,9 @@
+Ngu?i dùng : 
+	tài kho?n: user1
+	m?t kh?u: 123456789
+
+Qu?n tr? viên admin
+	tài kho?n: admin
+	m?t kh?u: 123
+
+https://github.com/tuanpham-aptech/sportequiptment

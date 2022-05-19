@@ -1,0 +1,51 @@
+@media (max-width:500px) {
+    .table thead {
+        display: none;
+    }
+
+    .table .table tbody, .table td, .table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .table tr {
+        margin-bottom: 15px;
+    }
+
+    .table td {
+        text-align:right;
+        padding-left: 50%;
+        text-align: right;
+        position: relative;
+    }
+    
+    .table td::before {
+        content : attr(data-label);
+        position: absolute;
+        left: 0;
+        width:50%;
+        text-align: left;
+        padding-left:15px;
+        font-size:15px;
+        font-weight:bold;
+    }
+
+    .form-container {
+        max-width: 100%;
+    }
+
+    .form-content .inputdetails {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .inputdetails::-webkit-scrollbar {
+        width:5px;
+    }
+  
+}
+@media print{
+    #noprint, #noprint * {
+        display: none !important;
+    }
+}

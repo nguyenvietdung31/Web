@@ -1,0 +1,347 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-font:  'Inter', sans-serif;
+    --secondary-font:'Playfair Display',sans-serif;
+    --three-font:'Mulish',sans-serif;
+    --gray-color:#B8BECD;
+    --gray-dark-color:#AFB0B9;
+    --gray-darkest-color:#202336;
+    background-image: url('https://image.freepik.com/free-vector/abstract-wave-geometric-white-gray-color-background_106065-173.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.container {
+    padding:0 8px;
+    background-image: url('https://image.shutterstock.com/image-vector/horizontal-background-geometric-patternvector-website-260nw-1495416785.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    /* position:fixed;
+    top: 0; */
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.logo-link {
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 6px;
+    border:1px solid var(--gray-dark-color);
+    color:#ffffff;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.logo-link span {
+    color:#ff0000;
+}
+.dropdown {
+    width:100%;
+    position:relative;
+}
+
+.dropdown-list {
+    display:none;
+    background-color: #fff;
+    top: 58px;
+    right: 30px;
+    border-radius: 8px;
+    position:absolute;
+    box-shadow: 1px 7px 15px rgb(0 0 0 / 30%);
+    width: 170px;
+}
+
+.dropdown-item {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--gray-dark-color);;
+}
+
+.dropdown-item a {
+    color: var(--gray-dark-color);
+    text-decoration: none;
+}
+
+.dropdown-item a:hover {
+    color:black;
+}
+.dropdown:hover .dropdown-list {
+    display: block;   
+}
+.dropdown-select {
+    padding: 15px 30px;
+    border-radius: 6px;
+    border:1px solid var(--gray-dark-color);
+    color:#ffffff;
+    cursor: pointer;
+}
+.dropdown-select--wrap {
+    display: flex;
+    align-items: center;
+}
+.dropdown-value {
+    font-size:22px
+}
+
+/* Start sidebar  */
+.sidebar {
+    float:left;
+    background-color : #ccc;
+    width:100%;
+    max-width: 15%;
+}
+
+.sidebar-item {
+    position: relative;
+    width: 100%;
+    border-bottom:1px solid #202336;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 15px 20px;
+    text-decoration: none;
+    color:#202336;
+    cursor: pointer;
+}
+
+.sidebar-drop-list {
+    display: none;
+    width: 180px;
+    position: absolute;
+    left: 100%;
+    background-color:rgb(173, 166, 166);
+    top: 2px;
+    z-index: 10;
+    border-radius: 2px;
+    border:1px solid var(--gray-dark-color);
+}
+
+.sidebar-item:hover .sidebar-drop-list {
+    display: block;
+}
+.sidebar-drop-item {
+    padding:15px 20px;
+    border-bottom:1px solid var(--gray-dark-color);
+}
+.main {
+    float:left;
+    width:100%;
+    max-width: 85%;
+}
+/*------------------------------form ----------------------*/
+.form-container {
+    max-width:510px;
+    width:100%;
+    margin: 0 auto;
+    margin-top:30px;
+    padding:25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px black;
+}
+
+.form-container.diffirent {
+    max-width:800px;
+    width:100%;
+    margin: 0 auto;
+    margin-top:30px;
+    padding:25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px black;
+}
+
+.head {
+    position: relative;
+    font-size:25px;
+}
+
+.horiz {
+    width: 60%;
+    height:4px;
+    margin-top: 3px;
+    background-image: linear-gradient(red,yellow 20%,green 40%);
+}
+
+.form-content {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+.form-content .inputdetails {
+    margin-bottom: 15px;
+    width: calc(100% - 20px);
+}
+
+.form-content.diffirent .inputdetails {
+    margin-bottom: 15px;
+    width: calc((100%/2) - 20px);
+}
+
+.labels {
+    display: block;
+    font-weight: 500;
+    margin-bottom:5px;
+    padding-bottom: 5px;
+}
+
+.inputdetails input, .inputdetails textarea,.inputdetails select {
+    height:45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+}
+
+.inputdetails input:focus,
+.inputdetails input:valid {
+    border-color: #99ff99;
+}
+
+.inputcheck {
+    width: 100%;
+}
+
+.inputcheck input +label span {
+    display: inline-block;
+}
+
+
+.btn {
+    display:flex;
+    height:45px;
+    margin:35px 0;
+}
+
+.btn input {
+    width: 25%;
+    height:100%;
+    border: none;
+    border-radius: 5px;
+    color:#fff;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color:#4CAF50;
+}
+.btn a{
+    margin-left: 15px;
+        display: block;
+        color:#fff;
+        text-decoration: none;
+        width: 100px;
+        height: 100%;
+        padding: 12px;
+        background-color: #134de2;
+        border-radius: 5px;
+        text-align: center;
+}
+
+.btn input:hover,.btn a:hover {
+    background-color: #003300;
+}
+
+
+/*---------------------------- end form ------------------ */
+table.show{
+    width: 96%;
+    border-collapse: collapse;
+    margin: 0 8px;
+}
+
+th,td{
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #d3d3d3;
+}
+
+table .delete{
+color:red;
+}
+
+.show {
+    margin: 0 4px;
+}
+
+.show .title {
+    width: 100%;
+    padding:15px 0;
+}
+
+.title .heading {
+    text-align: center;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td, .table th {
+    padding:12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+}
+
+.table th {
+    background-color:rgb(34 179 85);
+    color:#ffff;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color:#f5f5f5;
+}
+
+/* .title .heading {
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+} */
+
+.publish{
+color:blue;
+}
+
+.form-group span{
+    margin:1px 8px;
+}
+
+.form-group #brand-id,.form-group #image{
+    width: 40%;
+}
+
+#noprint {
+    display: block;
+    width: 80px;
+    height: 40px;
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    padding:8px;
+    background-color:blue;
+    outline: none;
+}
